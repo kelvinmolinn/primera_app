@@ -10,6 +10,9 @@ nombre = 'Juan';
 apellido = 'Perez';
 edad:number = 15;
 empresa = 'otra';
+sector = 'otro';
+jefe = 'otros';
+
 
 getEdad(){
   return this.edad;
