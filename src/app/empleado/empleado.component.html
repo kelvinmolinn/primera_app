@@ -2,7 +2,7 @@
 <p>Apellido del empleado: {{apellido}} </p>
 <p>Edad del empleado: {{edad+7}} </p>
 <p>Tipo de empleado: {{ (edad>=18) ? "Es mayor de edad" : "Es menor de edad" }} </p>
-Introduce la empresa <input type="text" #empresa (keyup)="0">
+Introduce la empresa <input type="text" #empresa (keyup)="0" [disabled]="habilitar_input_property">
 <br>
 <br>
 Introduce el sector <input type="text" #sector (keyup)="0">
@@ -17,3 +17,7 @@ Introduce el sector <input type="text" #jefe (keyup)="0">
 
 
 <!--<button (click)="set_empresa(empresa.value)" >Cambiar empresa</button>-->
+{{texto_registro}} <br>
+
+registrado: <input type="checkbox" id="registro" [checked]="usuario_registrado_property" (click)="set_usuario_registrado()">
+<!--{{cambiar_registro()}}-->
