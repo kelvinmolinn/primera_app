@@ -7,6 +7,8 @@ import { EmpleadoComponent } from './empleado/empleado.component';
 import { EmpleadoFeoComponent } from './empleado-feo/empleado-feo.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
+import { FormsModule } from '@angular/forms';
+import { PropiedadComponent } from './propiedad/propiedad.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,11 @@ import { HijoComponent } from './hijo/hijo.component';
     EmpleadoComponent,
     EmpleadoFeoComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    PropiedadComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

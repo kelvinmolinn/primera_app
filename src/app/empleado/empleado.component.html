@@ -1,23 +1,38 @@
-<p>nombre del empleado: {{nombre}} </p>
-<p>Apellido del empleado: {{apellido}} </p>
-<p>Edad del empleado: {{edad+7}} </p>
-<p>Tipo de empleado: {{ (edad>=18) ? "Es mayor de edad" : "Es menor de edad" }} </p>
-Introduce la empresa <input type="text" #empresa (keyup)="0" [disabled]="habilitar_input_property">
+
+{{seleccion}}<br>
+<select [(ngModel)]="seleccion">
+    <option value="Hola">Hola</option>
+    <option value="Adios">Adios</option>
+</select>
+<hr>
+<button [style]="color_boton_property" (click)="lanzar_mensaje()">Cambiar color</button>
+<br><br>
+<label>
+    <input type="checkbox" [(ngModel)]="estado_checkbox">Marcar / Deshacer
+</label>
+<p>
+    Estado del checkbox: {{estado_checkbox ? 'Marcado': 'No marcar'}}
+</p>
+<br><br>
+<input type="color" [(ngModel)]="color_property">
+<p>
+    color: {{color_property}}
+</p>
+<br><br>
+
+<p>introduce tu nombre</p>
+{{nombre.value}}
+<br>
+Introduce tu nombre <input type="text" #nombre>
 <br>
 <br>
-Introduce el sector <input type="text" #sector (keyup)="0">
+<input type="button" value="agregar" (click)="agregar_nombre(nombre.value)">
+
 <br>
+Introduce tu apellido
 <br>
-Introduce el sector <input type="text" #jefe (keyup)="0">
+{{apellido.value}}
 <br>
-<br>
-<p>Empresa del empleado: {{empresa.value}} </p>
-<p>Sector de la empresa: {{sector.value}} </p>
-<p>Jefe de la empresa: {{jefe.value}} </p>
+<input type="text" #apellido (keyup)="0">
 
 
-<!--<button (click)="set_empresa(empresa.value)" >Cambiar empresa</button>-->
-{{texto_registro}} <br>
-
-registrado: <input type="checkbox" id="registro" [checked]="usuario_registrado_property" (click)="set_usuario_registrado()">
-<!--{{cambiar_registro()}}-->

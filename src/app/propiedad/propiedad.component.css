@@ -1,0 +1,15 @@
+.color-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  .color-box button {
+    margin-top: 10px;
+  }
+  

@@ -6,27 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./empleado.component.css']
 })
 export class EmpleadoComponent {
-nombre = 'Juan';
-apellido = 'Perez';
-edad:number = 15;
-empresa = 'otra';
-sector = 'otro';
-jefe = 'otros';
-habilitar_input_property = false;
-usuario_registrado_property = true;
-texto_registro="no hay nadie";
-getEdad(){
-  return this.edad;
-}
+  seleccion = "Hola";
+  color_boton_property = "background-color: blue; color: white;";
+  mensaje = "";
+  estado_checkbox: boolean = true;
+  color_property = "#000000;";
+  
+  lanzar_mensaje(){
+    /*this.mensaje = 'Hola a mundo';
+    alert(this.mensaje);*/
+    if(this.color_boton_property == "background-color: blue; color: white;"){
 
-set_empresa(empresa: string){
+      this.color_boton_property = "background-color: red; color: white;";
+    }else{
+      this.color_boton_property = "background-color: blue; color: white;";
+    }
 
-}
-cambiar_registro(){
-  this.usuario_registrado_property =! this.usuario_registrado_property;
-}
-set_usuario_registrado(){
-  alert('el usuario se ha registrado');
-  this.texto_registro = 'el usuario se acaba de registrar';
-}
+  }
+
+  agregar_nombre(value:String){
+    
+  }
+
 }
