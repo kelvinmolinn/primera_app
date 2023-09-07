@@ -9,6 +9,9 @@ import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
 import { FormsModule } from '@angular/forms';
 import { PropiedadComponent } from './propiedad/propiedad.component';
+import { InfoContactoComponent } from './info-contacto/info-contacto.component';
+import { RutaInfoComponent } from './ruta-info/ruta-info.component';
+import { ParcialComponent } from './parcial/parcial.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { PropiedadComponent } from './propiedad/propiedad.component';
     EmpleadoFeoComponent,
     PadreComponent,
     HijoComponent,
-    PropiedadComponent
+    PropiedadComponent,
+    InfoContactoComponent,
+    RutaInfoComponent,
+    ParcialComponent
   ],
   imports: [
     BrowserModule, FormsModule

@@ -11,6 +11,20 @@ export class EmpleadoComponent {
   mensaje = "";
   estado_checkbox: boolean = true;
   color_property = "#000000;";
+  url_imagen_property= 'assets/Media/img/img1.jpg';
+  contador=0;
+
+  incrementar(){
+    this.contador++;
+  }
+
+  decrementar(){
+    this.contador--;
+  }
+
+  restablecer(){
+    this.contador=0;
+  }
   
   lanzar_mensaje(){
     /*this.mensaje = 'Hola a mundo';
