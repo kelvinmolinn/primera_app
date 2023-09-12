@@ -12,6 +12,7 @@ import { PropiedadComponent } from './propiedad/propiedad.component';
 import { InfoContactoComponent } from './info-contacto/info-contacto.component';
 import { RutaInfoComponent } from './ruta-info/ruta-info.component';
 import { ParcialComponent } from './parcial/parcial.component';
+import { RetoComponent } from './reto/reto.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ParcialComponent } from './parcial/parcial.component';
     PropiedadComponent,
     InfoContactoComponent,
     RutaInfoComponent,
-    ParcialComponent
+    ParcialComponent,
+    RetoComponent
   ],
   imports: [
     BrowserModule, FormsModule

@@ -1,0 +1,19 @@
+<label>Operando 1:</label>
+<input type="number" [(ngModel)]="n1" > <br>
+<label>Operando 2:</label>
+<input type="number" [(ngModel)]="n2" > <br>
+<button type="button" (click)="setOperador('+')">Sumar</button>
+<button type="button" (click)="setOperador('-')">Restar</button>
+<button type="button" (click)="setOperador('*')">Multiplicar</button>
+<button type="button" (click)="setOperador('/')">Dividir</button>
+<p>resultado:  {{resultado}} </p>
+
+<hr>
+
+<h5>Bachillerato stop</h5>
+<p><b>{{estado_juego}}
+</b></p>
+<br>
+<button value="iniciado" (click)="cambiar_estado($event)">Iniciar</button>
+<button value="pausado" (click)="cambiar_estado($event)">Pausar</button>
+<button value="finalizado" (click)="cambiar_estado($event)">Finalizar</button>
